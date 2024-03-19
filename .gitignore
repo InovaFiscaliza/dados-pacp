@@ -2,6 +2,7 @@
 datasets/
 .old/
 .obsoletos/
+Untitled.ipynb
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

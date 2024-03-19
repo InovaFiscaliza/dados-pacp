@@ -27,7 +27,7 @@ def clean_text(doc):
     
     return doc
 
-def plot_docs_matrix(docs_matrix, true_targets=None, predicted_targets=None):
+def plot_docs_matrix(docs_matrix, true_targets=None, predicted_targets=None, title=None):
     pca = TruncatedSVD(n_components=2)
     pca_matrix = pca.fit_transform(docs_matrix)
     scatter_x = pca_matrix[:, 0] # first principle component
@@ -39,10 +39,16 @@ def plot_docs_matrix(docs_matrix, true_targets=None, predicted_targets=None):
             for group in np.unique(true_targets):
                 ix = np.where(true_targets == group)
                 ax.scatter(scatter_x[ix], scatter_y[ix], label=group, s=5)
-                ax.set_title('Documents: true Classes')   
+                if title is None:
+                    ax.set_title('Documents: true Classes')   
+                else:
+                    ax.set_title(title)
         else:
             ax.scatter(scatter_x, scatter_y, s=5)
-            ax.set_title('Documents')
+            if title is None:
+                ax.set_title('Documents')
+            else:
+                ax.set_title(title)
         ax.set_xticks([])
         ax.set_yticks([])
         
@@ -52,15 +58,21 @@ def plot_docs_matrix(docs_matrix, true_targets=None, predicted_targets=None):
             for group in np.unique(true_targets):
                 ix = np.where(true_targets == group)
                 axs[0].scatter(scatter_x[ix], scatter_y[ix], label=group, s=5)
-                axs[0].set_title('Documents: true Classes')   
+                if title is None:
+                    axs[0].set_title('Documents: true Classes')   
+                else:
+                    axs[0].set_title(title)
         else:
             axs[0].scatter(scatter_x, scatter_y, s=5)
-            axs[0].set_title('Documents')
+            if title is none:
+                axs[0].set_title('Documents')
+            else:
+                axs[0].set_title(title)
         
         for group in np.unique(predicted_targets):
             ix = np.where(predicted_targets == group)
             axs[1].scatter(scatter_x[ix], scatter_y[ix], label=group, s=5)
-            axs[1].set_title('Documents: predicted Classes')
+            axs[1].set_title('Predicted Classes')
 
         for ax in axs.flat:
             ax.set_xticks([])
