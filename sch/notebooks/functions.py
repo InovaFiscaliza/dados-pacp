@@ -69,6 +69,9 @@ def plot_docs_matrix(docs_matrix, true_targets=None, predicted_targets=None):
     plt.show()
 
 def plot_wordcloud(wc_docs,max_words=50):
+
+    if hasattr(wc_docs, '__iter__'):
+        wc_docs = ' '.join(wc_docs)
    
     wc = WordCloud(max_words=max_words,height=300).generate(wc_docs)
     wc_no_bigram = WordCloud(max_words=max_words,height=300,collocation_threshold=-1).generate(wc_docs)
