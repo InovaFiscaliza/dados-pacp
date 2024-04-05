@@ -1,8 +1,10 @@
 # Project-specific files and folders
 datasets/
+models/
 .old/
 .obsoletos/
-Untitled.ipynb
+Untitled*.ipynb
+*.sh
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
