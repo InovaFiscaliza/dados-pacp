@@ -1,0 +1,105 @@
+<mxfile host="app.diagrams.net" modified="2024-05-11T14:45:24.746Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" etag="bbJicyoqKPKEzK5hWR1q" version="24.4.0" type="device">
+  <diagram id="Tpr4IJxqY-_qHnlEvQru" name="Page-1">
+    <mxGraphModel dx="1248" dy="995" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="i_UMnOfUa3ggryLjKaL8-24" value="" style="endArrow=classic;html=1;fontFamily=Helvetica;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" target="i_UMnOfUa3ggryLjKaL8-25" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="143" y="110" as="sourcePoint" />
+            <mxPoint x="230" y="140" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i_UMnOfUa3ggryLjKaL8-34" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;" parent="1" source="i_UMnOfUa3ggryLjKaL8-31" target="i_UMnOfUa3ggryLjKaL8-33" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i_UMnOfUa3ggryLjKaL8-55" value="TREINAMENTO" style="swimlane;rounded=0;shadow=0;glass=0;sketch=0;strokeWidth=1;fontFamily=Helvetica;align=center;swimlaneLine=1;noLabel=0;connectable=1;allowArrows=1;collapsible=0;horizontal=0;fontStyle=0;spacing=2;" parent="1" vertex="1">
+          <mxGeometry x="40" y="40" width="640" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="i_UMnOfUa3ggryLjKaL8-63" value="" style="group" parent="i_UMnOfUa3ggryLjKaL8-55" vertex="1" connectable="0">
+          <mxGeometry x="20" y="80" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="i_UMnOfUa3ggryLjKaL8-59" value="Anúncios rotulados manualmento" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;glass=0;sketch=0;fontFamily=Helvetica;" parent="i_UMnOfUa3ggryLjKaL8-63" vertex="1">
+          <mxGeometry width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="i_UMnOfUa3ggryLjKaL8-25" value="Pré-processamento" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;strokeColor=#000000;fillColor=none;fontFamily=Helvetica;" parent="i_UMnOfUa3ggryLjKaL8-55" vertex="1">
+          <mxGeometry x="140" y="40" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="i_UMnOfUa3ggryLjKaL8-29" value="Construção do modelo de espaço vetorial" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;strokeColor=#000000;fillColor=none;fontFamily=Helvetica;" parent="i_UMnOfUa3ggryLjKaL8-55" vertex="1">
+          <mxGeometry x="280" y="40" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="i_UMnOfUa3ggryLjKaL8-30" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;" parent="i_UMnOfUa3ggryLjKaL8-55" source="i_UMnOfUa3ggryLjKaL8-25" target="i_UMnOfUa3ggryLjKaL8-29" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i_UMnOfUa3ggryLjKaL8-31" value="Indução do modelo de classificação" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;strokeColor=#000000;fillColor=none;fontFamily=Helvetica;" parent="i_UMnOfUa3ggryLjKaL8-55" vertex="1">
+          <mxGeometry x="420" y="40" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="i_UMnOfUa3ggryLjKaL8-32" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;" parent="i_UMnOfUa3ggryLjKaL8-55" source="i_UMnOfUa3ggryLjKaL8-29" target="i_UMnOfUa3ggryLjKaL8-31" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i_UMnOfUa3ggryLjKaL8-57" value="CLASSIFICAÇÃO" style="swimlane;rounded=0;shadow=0;glass=0;sketch=0;strokeWidth=1;fontFamily=Helvetica;align=center;swimlaneLine=1;noLabel=0;connectable=1;allowArrows=1;collapsible=0;horizontal=0;perimeter=rectanglePerimeter;container=0;fontStyle=0" parent="1" vertex="1">
+          <mxGeometry x="40" y="180" width="640" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="i_UMnOfUa3ggryLjKaL8-38" value="" style="group;" parent="i_UMnOfUa3ggryLjKaL8-57" vertex="1" connectable="0">
+          <mxGeometry x="40" y="30" width="60" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="i_UMnOfUa3ggryLjKaL8-39" value="" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.multi-document;whiteSpace=wrap;rounded=0;shadow=0;glass=0;sketch=0;fillColor=#FFFFFF;" parent="i_UMnOfUa3ggryLjKaL8-38" vertex="1">
+          <mxGeometry width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="i_UMnOfUa3ggryLjKaL8-40" value="" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.multi-document;whiteSpace=wrap;rounded=0;shadow=0;glass=0;sketch=0;" parent="i_UMnOfUa3ggryLjKaL8-38" vertex="1">
+          <mxGeometry x="10" y="10" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="i_UMnOfUa3ggryLjKaL8-37" value="Pré-processamento" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;strokeColor=#000000;fillColor=none;fontFamily=Helvetica;" parent="i_UMnOfUa3ggryLjKaL8-57" vertex="1">
+          <mxGeometry x="140" y="35" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="i_UMnOfUa3ggryLjKaL8-41" value="Construção do modelo de espaço vetorial" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;strokeColor=#000000;fillColor=none;fontFamily=Helvetica;" parent="i_UMnOfUa3ggryLjKaL8-57" vertex="1">
+          <mxGeometry x="280" y="35" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="i_UMnOfUa3ggryLjKaL8-64" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;" parent="i_UMnOfUa3ggryLjKaL8-57" source="i_UMnOfUa3ggryLjKaL8-33" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="560" y="65" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i_UMnOfUa3ggryLjKaL8-33" value="Classificador" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;glass=0;sketch=0;strokeColor=#000000;fillColor=none;fontFamily=Helvetica;" parent="i_UMnOfUa3ggryLjKaL8-57" vertex="1">
+          <mxGeometry x="420" y="35" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="i_UMnOfUa3ggryLjKaL8-35" value="" style="endArrow=classic;html=1;fontFamily=Helvetica;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="i_UMnOfUa3ggryLjKaL8-57" target="i_UMnOfUa3ggryLjKaL8-37" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="103" y="65" as="sourcePoint" />
+            <mxPoint x="170" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="i_UMnOfUa3ggryLjKaL8-36" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;" parent="i_UMnOfUa3ggryLjKaL8-57" source="i_UMnOfUa3ggryLjKaL8-37" target="i_UMnOfUa3ggryLjKaL8-41" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i_UMnOfUa3ggryLjKaL8-42" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Helvetica;" parent="i_UMnOfUa3ggryLjKaL8-57" source="i_UMnOfUa3ggryLjKaL8-41" target="i_UMnOfUa3ggryLjKaL8-33" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i_UMnOfUa3ggryLjKaL8-58" value="Anúncios não rotulados" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;glass=0;sketch=0;fontFamily=Helvetica;" parent="i_UMnOfUa3ggryLjKaL8-57" vertex="1">
+          <mxGeometry x="25" y="80" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="i_UMnOfUa3ggryLjKaL8-60" value="Anúncios classificados automaticamente" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;shadow=0;glass=0;sketch=0;fontFamily=Helvetica;" parent="i_UMnOfUa3ggryLjKaL8-57" vertex="1">
+          <mxGeometry x="545" y="80" width="90" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="2UQp5oP8BxKJYHRedIB2-3" value="" style="group" parent="i_UMnOfUa3ggryLjKaL8-57" vertex="1" connectable="0">
+          <mxGeometry x="560" y="35" width="60" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="2UQp5oP8BxKJYHRedIB2-4" value="" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.multi-document;whiteSpace=wrap;rounded=0;shadow=0;glass=0;sketch=0;fillColor=#fff2cc;" parent="2UQp5oP8BxKJYHRedIB2-3" vertex="1">
+          <mxGeometry width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="2UQp5oP8BxKJYHRedIB2-5" value="" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.multi-document;whiteSpace=wrap;rounded=0;shadow=0;glass=0;sketch=0;fillColor=#dae8fc;" parent="2UQp5oP8BxKJYHRedIB2-3" vertex="1">
+          <mxGeometry x="10" y="10" width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="i_UMnOfUa3ggryLjKaL8-28" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="79" y="74" width="60" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="i_UMnOfUa3ggryLjKaL8-12" value="" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.multi-document;whiteSpace=wrap;rounded=0;shadow=0;glass=0;sketch=0;fillColor=#fff2cc;" parent="i_UMnOfUa3ggryLjKaL8-28" vertex="1">
+          <mxGeometry width="50" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="i_UMnOfUa3ggryLjKaL8-20" value="" style="strokeWidth=1;html=1;shape=mxgraph.flowchart.multi-document;whiteSpace=wrap;rounded=0;shadow=0;glass=0;sketch=0;fillColor=#dae8fc;" parent="i_UMnOfUa3ggryLjKaL8-28" vertex="1">
+          <mxGeometry x="10" y="10" width="50" height="40" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
