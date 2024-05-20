@@ -1,3 +1,13 @@
+# Project-specific files and folders
+datasets/
+models/
+.old/
+.obsoletos/
+sch/docs/sample_images
+Untitled*.ipynb
+*.sh
+creds.ini
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
