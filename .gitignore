@@ -7,6 +7,7 @@ sch/docs/sample_images
 Untitled*.ipynb
 *.sh
 creds.ini
+*.poetrylock
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
