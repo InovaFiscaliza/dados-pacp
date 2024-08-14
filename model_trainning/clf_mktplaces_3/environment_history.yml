@@ -1,0 +1,10 @@
+name: marketplaces
+channels:
+  - defaults
+dependencies:
+  - python
+  - scikit-learn
+  - pandas
+  - nltk
+  - pyarrow
+prefix: C:\Users\maxwelfreitas\anaconda3\envs\marketplaces
