@@ -158,30 +158,42 @@ class MeliSearch:
         if not 'attributes' in item_details.keys():
             return None
         
-        parsed_item = {key:None for key in columns_to_keep}    
+        parsed_item_details = {key:None for key in columns_to_keep}    
         for key in keys_to_keep:
             try:
-                parsed_item[key] = item_details[key]
+                parsed_item_details[key] = item_details[key]
             except:
                 continue
         
         for item_attribute in item_details['attributes']:
             if item_attribute['id'] in attributes_to_keep:
                 attribute_key = item_attribute['id'].lower()
-                parsed_item[attribute_key]  = item_attribute['value_name']
+                parsed_item_details[attribute_key]  = item_attribute['value_name']
 
-        parsed_item['warranty_type'] = None
+        parsed_item_details['warranty_type'] = None
         if 'sale_terms' in item_details.keys():
             for sale_term in item_details['sale_terms']:
                 if sale_term['id'] == 'WARRANTY_TYPE':
-                    parsed_item['warranty_type'] = sale_term['value_name']
+                    parsed_item_details['warranty_type'] = sale_term['value_name']
 
-        if parsed_item['anatel_homologation_number'] is not None:
-            parsed_item['anatel_homologation_number'] = parsed_item['anatel_homologation_number'].zfill(12)
+        if parsed_item_details['anatel_homologation_number'] is not None:
+            parsed_item_details['anatel_homologation_number'] = parsed_item_details['anatel_homologation_number'].zfill(12)
 
-        if parsed_item['cellphones_anatel_homologation_number'] is not None:
-            parsed_item['cellphones_anatel_homologation_number'] = parsed_item['cellphones_anatel_homologation_number'].zfill(12)
+        if parsed_item_details['cellphones_anatel_homologation_number'] is not None:
+            parsed_item_details['cellphones_anatel_homologation_number'] = parsed_item_details['cellphones_anatel_homologation_number'].zfill(12)
 
-        return parsed_item
+        return parsed_item_details
+    
+    def parse_item_details_file(self, item_details_file):
+        
+        if isinstance(item_details_file, str):
+            item_details_file = Path(item_details_file)
+        
+        with open(item_details_file) as file:
+            item_details = json.load(file)
+            
+        return self.parse_item_details(item_details)
+                
+        
         
     
