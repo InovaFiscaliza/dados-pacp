@@ -128,6 +128,7 @@ class MeliSearch:
             'category_id', 
             'official_store_id', 
             'price', 
+            'shipping',
             'currency_id', 
             'initial_quantity',
             'condition', 
@@ -152,7 +153,10 @@ class MeliSearch:
 
         columns_to_keep = [col.lower() for col in keys_to_keep+attributes_to_keep]
 
-        if item_details['status']=='under review':
+        try:
+            if item_details['status']=='under review':
+                return None
+        except:
             return None
 
         if not 'attributes' in item_details.keys():
